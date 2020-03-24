@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Саша Ершов](https://up.htmlacademy.ru/adaptive/19/user/908335).
-* Наставник: `Неизвестно`.
+* Наставник: `Антон Пермяков`.
 
 ---
 
