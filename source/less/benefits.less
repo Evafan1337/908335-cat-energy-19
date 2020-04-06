@@ -1,46 +1,45 @@
-.benefits__list{
+.benefits__list {
   list-style-type: none;
   position: relative;
 }
 
-.benefits__header{
+.benefits__header {
   font-size: 36px;
   line-height: 60px;
 }
 
-.benefits__item{
-  // temporary styles
+.benefits__item {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.benefits__item:before{
-  position:absolute;
+.benefits__item::before {
+  position: absolute;
   content: "";
   width: 60px;
   height: 60px;
   background-color: #68b738;
 }
 
-.benefits__item--natural:before{
-  background-image: url('../img/advantage-leaf@1x.png');
+.benefits__item--natural::before {
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.benefits__item--form:before{
-  background-image: url('../img/advantage-powder@1x.png');
+.benefits__item--form::before {
+  background-image: url("../img/advantage-powder@1x.png");
 }
 
-.benefits__item--timing:before{
-  background-image: url('../img/advantage-dining@1x.png');
+.benefits__item--timing::before {
+  background-image: url("../img/advantage-dining@1x.png");
 }
 
-.benefits__item--changes:before{
-  background-image: url('../img/advantage-clock@1x.png');
+.benefits__item--changes::before {
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
-.benefits__text{
-  font-family: 'Arial';
+.benefits__text {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
