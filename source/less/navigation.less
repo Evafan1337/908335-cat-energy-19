@@ -1,0 +1,30 @@
+.navigation {
+  background-color: #ffffff;
+}
+
+.navigation__link {
+  display: block;
+}
+
+.navigation__img {
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation__link {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navigation {
+    justify-content: space-around;
+    position: relative;
+    z-index: -1;
+    background-color: transparent;
+  }
+}
