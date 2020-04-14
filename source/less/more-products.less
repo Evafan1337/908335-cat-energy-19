@@ -1,16 +1,45 @@
+.more-products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 107px;
+}
+
 .more-products__header {
+  position: relative;
+  margin-bottom: 11px;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
   color: #111111;
 }
 
+.more-products__header::before {
+  position: absolute;
+  content: " ";
+  left: 145px;
+  top: -77px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-plus.svg");
+}
+
 .more-products__text {
+  text-align: center;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
 }
 
 .more-products__link {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 25px;
+  margin-top: 22px;
+  padding-top: 12px;
+  padding-bottom: 13px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
