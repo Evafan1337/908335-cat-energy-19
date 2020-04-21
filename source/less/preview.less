@@ -6,11 +6,18 @@
 }
 
 .preview__header {
-  font-size: 26px;
+  padding-top: 28px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 33px;
   line-height: 36px;
   text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
+}
+
+.preview__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .preview__text {
@@ -23,10 +30,10 @@
 
 .preview__link {
   display: block;
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
   padding-top: 14px;
-  padding-bottom: 11px;
+  padding-bottom: 8px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -37,20 +44,32 @@
   color: #ffffff;
 }
 
+.preview__image {
+  padding-top: 28px;
+  padding-left: 21px;
+  padding-bottom: 3px;
+}
+
 @media (min-width: 768px) {
   .preview {
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position-y: 140px;
+    background-position-y: 270px;
+    background-position-x: 29px;
   }
 
   .preview__header {
-    margin-left: 120px;
-    width: 410px;
+    padding-top: 70px;
+    font-size: 56px;
+    line-height: 61px;
+    margin-left: 117px;
+    margin-bottom: 42px;
+    width: 55%;
     text-align: left;
     color: #111111;
   }
 
   .preview__text {
+    font-size: 19px;
     color: #111111;
     margin-left: 120px;
     text-align: left;
@@ -61,7 +80,11 @@
   }
 
   .preview__link {
-    margin-top: 48px;
+    font-size: 20px;
+    padding-left: 0;
+    padding-bottom: 18px;
+    width: 32%;
+    margin-top: 52px;
     margin-left: 120px;
     margin-bottom: 529px;
   }
@@ -73,6 +96,26 @@
     position: relative;
     background-position-y: 0;
     background-position-x: 720px;
-    // z-index: 1;
+  }
+
+  .preview__header {
+    padding-top: 19%;
+    margin-left: -15%;
+    font-size: 56px;
+    line-height: 60px;
+  }
+
+  .preview__text {
+    margin-left: -15%;
+  }
+
+  .preview__link {
+    font-size: 20px;
+    padding-left: 3px;
+    padding-bottom: 18px;
+    width: 30%;
+    margin-top: 7%;
+    margin-left: -15%;
+    margin-bottom: 265px;
   }
 }

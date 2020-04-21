@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald-Medium", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -24,20 +24,32 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 320px;
   margin: 0 auto;
+}
+
+.temp {
+  display: block;
+  height: 1180px;
+  margin-top: 33px;
+  background-color: red;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
     margin: 0 auto;
+  }
+
+  .temp {
+    height: 1702px;
   }
 }
 
 @media (min-width: 1440px) {
   .container {
-    width: 1440px;
     margin: 0 auto;
+  }
+
+  .temp {
+    height: 1025px;
   }
 }
