@@ -10,7 +10,7 @@
 }
 
 .info__value {
-  margin-left: 52%;
+  margin-left: 50%;
 }
 
 .info__value--price {
@@ -23,4 +23,18 @@
 
 .info__item {
   display: flex;
+}
+
+@media (min-width: 768px) {
+  .info__item {
+    justify-content: space-around;
+  }
+
+  .info__param {
+    margin-left: 0;
+  }
+
+  .info__value {
+    margin-left: 0;
+  }
 }
