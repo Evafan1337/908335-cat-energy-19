@@ -32,52 +32,56 @@
 
   <main>
     <h1 class="visually-hidden">Подберите функциональное питание для вашего кота.</h1>
-    <section class="preview-form container">
+    <div class="preview-form">
       <div class="container">
         <h1 class="preview-form__title">Подбор программы</h1>
         <p class="preview-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
-    </section>
+    </div>
 
-    <section class="form">
+    <div class="form">
       <div class="container">
         <form action="https://echo.htmlacademy.ru" class="form__item fields" method="get">
           <div class="fields__wrapper">
-            <div class="fields__set fields__set--personal">
+            <fieldset class="fields__set fields__set--personal">
               <div class="fields__block">
                 <label for="catname" class="fields__label">Имя:*</label>
                 <input type="text" class="fields__textfield" id="catname" name="catname" placeholder="Барсик">
               </div>
+
               <div class="fields__block">
                 <label for="weight" class="fields__label">Вес (кг):*</label>
                 <input type="text" class="fields__textfield" id="weight" name="weight" placeholder="7">
               </div>
+
               <div class="fields__block">
                 <label for="age" class="fields__label">Возраст (лет):</label>
                 <input type="text" class="fields__textfield" id="age" name="age" placeholder="7">
               </div>
-            </div>
+            </fieldset>
 
-            <div class="fields__set fields__set--program">
+            <fieldset class="fields__set fields__set--program">
               <ul class="fields__list program-type-list">
                 <li class="program-type-list__item">
                   <input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked="">
-                  <label for="slim" class="program-type-list__label" tabindex="0">Похудение</label>
+                  <label for="slim" class="program-type-list__label">Похудение</label>
                 </li>
                 <li class="program-type-list__item">
                   <input type="radio" class="program-type-list__input" name="program" value="mass" id="mass">
-                  <label for="mass" class="program-type-list__label" tabindex="0">Набор массы</label>
+                  <label for="mass" class="program-type-list__label">Набор массы</label>
                 </li>
                 <li class="program-type-list__item">
                   <input type="radio" class="program-type-list__input" name="program" value="advice" id="advice">
-                  <label for="advice" class="program-type-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
+                  <label for="advice" class="program-type-list__label">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
-            </div>
+            </fieldset>
 
-            <div class="fields__set fields__set--contacts">
+            <fieldset class="fields__set fields__set--contacts">
               <div class="fields__head">
-                <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+                <legend>
+                  <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+                </legend>
               </div>
               <div class="fields__inner">
                 <div class="fields__block">
@@ -95,19 +99,24 @@
                   </svg>
                 </div>
               </div>
-            </div>
+            </fieldset>
 
-            <div class="fields__set fields__set--descr">
+            <fieldset class="fields__set fields__set--descr">
               <div class="fields__head">
-                <h2 class="fields__title">Комментарий</h2>
+                <legend>
+                  <h2 class="fields__title">Комментарий</h2>
+                </legend>
               </div>
               <textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
+            </fieldset>
 
-            <div class="fields__set fields__set--add">
+            <fieldset class="fields__set fields__set--add">
               <div class="fields__head">
-                <h2 class="fields__title">Дополнительно</h2>
+                <legend>
+                  <h2 class="fields__title">Дополнительно</h2>
+                </legend>
               </div>
+
               <ul class="fields__list add-list">
                 <li class="add-list__item">
                   <input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked="">
@@ -126,7 +135,7 @@
                   <label for="vitamins" class="add-list__label" tabindex="0">Витамины</label>
                 </li>
               </ul>
-            </div>
+            </fieldset>
 
             <div class="fields__button-block">
               <button class="fields__button button" type="submit">Отправить заявку</button>
@@ -135,8 +144,45 @@
           </div>
         </form>
       </div>
+    </div>
+
+    <section class="contacts">
+      <div class="contacts__preview">
+        <div class="container">
+          <div class="contacts__preview-text">
+            <h2>Приглашаем к сотрудничеству дилеров!</h2>
+            <div class="contacts__adress">
+              <p class="contacts__adress-info">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__adress-info">Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__map">
+        <picture>
+            <source media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+            <img src="img/bg-map-mobile@1x.png" alt="Где мы находимся">
+        </picture>
+      </div>
     </section>
-    <section class="contacts"></section>
+
+    <!-- <section class="cooperation">
+      <div class="cooperation__wrapper">
+        <div class="container">
+          <div class="cooperation__inner">
+            <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <div class="cooperation__adress">
+              <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="cooperation__city">Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section> -->
+
   </main>
 
   <footer class="footer">
