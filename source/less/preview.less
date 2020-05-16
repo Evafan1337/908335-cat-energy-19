@@ -1,16 +1,26 @@
 .preview {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 .preview__header {
-  font-size: 26px;
+  // padding-top: 28px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 33px;
   line-height: 36px;
   text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
+}
+
+.preview__item {
+  // padding-left: 0;
+  // padding-right: 0;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
 }
 
 .preview__text {
@@ -23,10 +33,11 @@
 
 .preview__link {
   display: block;
-  width: 280px;
+  // width: %;
+  width: 100%;
   margin: 0 auto;
   padding-top: 14px;
-  padding-bottom: 11px;
+  padding-bottom: 8px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -37,22 +48,40 @@
   color: #ffffff;
 }
 
+.preview__image {
+  margin-top: 28px;
+  // margin-left: 21px;
+  // margin-right: 21px;
+  margin-bottom: 3px;
+}
+
 @media (min-width: 768px) {
   .preview {
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position-y: 140px;
+    background-position-y: 270px;
+    background-position-x: 29px;
   }
 
   .preview__header {
-    margin-left: 120px;
-    width: 410px;
+    margin-top: 41px;
+    font-size: 56px;
+    line-height: 61px;
+    margin-left: 95px;
+    margin-right: 150px;
+    margin-bottom: 43px;
+    /* width: 55%; */
     text-align: left;
     color: #111111;
   }
 
+  .preview__item {
+    padding-bottom: 529px;
+  }
+
   .preview__text {
+    font-size: 19px;
     color: #111111;
-    margin-left: 120px;
+    margin-left: 98px;
     text-align: left;
   }
 
@@ -61,9 +90,12 @@
   }
 
   .preview__link {
-    margin-top: 48px;
-    margin-left: 120px;
-    margin-bottom: 529px;
+    font-size: 20px;
+    padding-left: 0;
+    padding-bottom: 18px;
+    width: 245px;
+    margin-top: 52px;
+    margin-left: 102px;
   }
 }
 
@@ -73,6 +105,33 @@
     position: relative;
     background-position-y: 0;
     background-position-x: 720px;
-    // z-index: 1;
+  }
+
+  .preview__header {
+    margin-top: 125px;
+    margin-left: 170px;
+    width: 420px;
+    /* margin-right: 330px; */
+    font-size: 56px;
+    line-height: 60px;
+  }
+
+  .preview__text {
+    margin-left: 171px;
+    // margin-left: -15%;
+  }
+
+  .preview__item {
+    padding-bottom: 0;
+  }
+
+  .preview__link {
+    font-size: 20px;
+    padding-left: 3px;
+    padding-bottom: 18px;
+    /* width: 22%; */
+    margin-left: 170px;
+    margin-top: 58px;
+    margin-bottom: 265px;
   }
 }

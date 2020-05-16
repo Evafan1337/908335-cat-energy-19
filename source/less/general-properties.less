@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald-Medium", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   color: #000000;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -24,20 +25,37 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 320px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  // box-sizing: content-box;
+}
+
+.temp {
+  display: block;
+  height: 1180px;
+  margin-top: 33px;
+  background-color: red;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
     margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .temp {
+    height: 1702px;
   }
 }
 
 @media (min-width: 1440px) {
   .container {
-    width: 1440px;
     margin: 0 auto;
+  }
+
+  .temp {
+    height: 1025px;
   }
 }

@@ -11,7 +11,7 @@
     <a class="navigation__link">
       <img class="navigation__img" src="img/logo-tablet.svg" width="191" height="39" alt="Cat energy logo">
     </a>
-    <nav class="navigation-menu">
+    <nav class="navigation-menu visually-hidden">
       <a href="index.html" class="navigation-menu__link">Главная</a>
       <a class="navigation-menu__link">Каталог продукции</a>
       <a href="form.html" class="navigation-menu__link">Подбор программы</a>
@@ -26,7 +26,12 @@
         <li class="products__elem">
           <div class="products__item">
             <a class="products__link-image">
-              <img src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy Pro 500г">
+              <picture class="products__picture-list">
+                  <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png" width="161px" height="172px">
+                  <img class="products__picture-list-elem" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 500г">
+              </picture>
+              <!-- <img src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy Pro 500г"> -->
             </a>
 
             <div class="products__content">
@@ -38,7 +43,7 @@
                 <dl class="info__description">
                   <div class="info__item">
                     <dt class="info__param">Объем</dt>
-                    <dd class="info__value">500г</dd>
+                    <dd class="info__value">500 г</dd>
                   </div>
 
                   <div class="info__item">
@@ -48,7 +53,7 @@
 
                   <div class="info__item">
                     <dt class="info__param">Цена</dt>
-                    <dd class="info__value">700р</dd>
+                    <dd class="info__value">700 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -60,7 +65,12 @@
         <li class="products__elem">
           <div class="products__item">
             <a class="products__link-image">
-              <img src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy Pro 1000г">
+              <picture class="products__picture-list">
+                  <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
+                  <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 1000г">
+              </picture>
+              <!-- <img src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy Pro 1000г"> -->
             </a>
 
             <div class="products__content">
@@ -72,7 +82,7 @@
                 <dl class="info__description">
                   <div class="info__item">
                     <dt class="info__param">Объем</dt>
-                    <dd class="info__value">1000г</dd>
+                    <dd class="info__value info__value--weight-change">1000 г</dd>
                   </div>
 
                   <div class="info__item">
@@ -82,7 +92,7 @@
 
                   <div class="info__item">
                     <dt class="info__param">Цена</dt>
-                    <dd class="info__value">1000р</dd>
+                    <dd class="info__value">1000 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -94,7 +104,12 @@
         <li class="products__elem">
           <div class="products__item">
             <a class="products__link-image">
-              <img src="img/fish-small-mobile@1x.jpg" alt="Cat Energy Pro 500г">
+              <picture class="products__picture-list">
+                  <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
+                  <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 500г">
+              </picture>
+              <!-- <img src="img/fish-small-mobile@1x.jpg" alt="Cat Energy Pro 500г"> -->
             </a>
 
             <div class="products__content">
@@ -106,7 +121,7 @@
                 <dl class="info__description">
                   <div class="info__item">
                     <dt class="info__param">Объем</dt>
-                    <dd class="info__value">500г</dd>
+                    <dd class="info__value">500 г</dd>
                   </div>
 
                   <div class="info__item">
@@ -116,7 +131,7 @@
 
                   <div class="info__item">
                     <dt class="info__param">Цена</dt>
-                    <dd class="info__value">700р</dd>
+                    <dd class="info__value">700 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -128,7 +143,12 @@
         <li class="products__elem">
           <div class="products__item">
             <a class="products__link-image">
-              <img src="img/fish-big-mobile@1x.jpg" alt="Cat Energy Pro 500г">
+              <picture class="products__picture-list">
+                  <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
+                  <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro 1000г">
+              </picture>
+              <!-- <img src="img/fish-big-mobile@1x.jpg" alt="Cat Energy Pro 500г"> -->
             </a>
 
             <div class="products__content">
@@ -140,7 +160,7 @@
                 <dl class="info__description">
                   <div class="info__item">
                     <dt class="info__param">Объем</dt>
-                    <dd class="info__value">1000г</dd>
+                    <dd class="info__value info__value--weight-change">1000 г</dd>
                   </div>
 
                   <div class="info__item">
@@ -150,7 +170,7 @@
 
                   <div class="info__item">
                     <dt class="info__param">Цена</dt>
-                    <dd class="info__value">1000р</dd>
+                    <dd class="info__value">1000 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -162,7 +182,12 @@
         <li class="products__elem">
           <div class="products__item">
             <a class="products__link-image">
-              <img src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy Slim 500г">
+              <picture class="products__picture-list">
+                  <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                  <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500г">
+              </picture>
+              <!-- <img src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy Slim 500г"> -->
             </a>
 
             <div class="products__content">
@@ -174,7 +199,7 @@
                 <dl class="info__description">
                   <div class="info__item">
                     <dt class="info__param">Объем</dt>
-                    <dd class="info__value">500г</dd>
+                    <dd class="info__value">500 г</dd>
                   </div>
 
                   <div class="info__item">
@@ -184,7 +209,7 @@
 
                   <div class="info__item">
                     <dt class="info__param">Цена</dt>
-                    <dd class="info__value">400р</dd>
+                    <dd class="info__value">400 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -196,7 +221,12 @@
         <li class="products__elem">
           <div class="products__item">
             <a class="products__link-image">
-              <img src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy Slim 1000г">
+              <picture class="products__picture-list">
+                  <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
+                  <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000г">
+              </picture>
+              <!-- <img src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy Slim 1000г"> -->
             </a>
 
             <div class="products__content">
@@ -208,7 +238,7 @@
                 <dl class="info__description">
                   <div class="info__item">
                     <dt class="info__param">Объем</dt>
-                    <dd class="info__value">500г</dd>
+                    <dd class="info__value">500 г</dd>
                   </div>
 
                   <div class="info__item">
@@ -218,7 +248,7 @@
 
                   <div class="info__item">
                     <dt class="info__param">Цена</dt>
-                    <dd class="info__value">700р</dd>
+                    <dd class="info__value">700 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -230,7 +260,12 @@
         <li class="products__elem">
           <div class="products__item">
             <a class="products__link-image">
-              <img src="img/rice-small-mobile@1x.jpg" alt="Cat Energy Slim 500г">
+              <picture class="products__picture-list">
+                  <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
+                  <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000г">
+              </picture>
+              <!-- <img src="img/rice-small-mobile@1x.jpg" alt="Cat Energy Slim 500г"> -->
             </a>
 
             <div class="products__content">
@@ -242,7 +277,7 @@
                 <dl class="info__description">
                   <div class="info__item">
                     <dt class="info__param">Объем</dt>
-                    <dd class="info__value">500г</dd>
+                    <dd class="info__value">500 г</dd>
                   </div>
 
                   <div class="info__item">
@@ -252,7 +287,7 @@
 
                   <div class="info__item">
                     <dt class="info__param">Цена</dt>
-                    <dd class="info__value">500р</dd>
+                    <dd class="info__value">500 Р.</dd>
                   </div>
                 </dl>
               </div>
@@ -276,21 +311,21 @@
     </a>
 
     <ul class="footer__socials socials">
-      <li class="footer__socials-links">
+      <li class="footer__socials-links socials__vk">
         <a class="socials__img">
-          <img class="socials__icon" src="img/icon-vk.svg" alt="Вконтакте"  width="22" height="12">
+          <img class="socials__icon socials__icon--vk" src="img/icon-vk.svg" alt="Вконтакте"  width="22" height="12">
         </a>
       </li>
 
-      <li class="footer__socials-links">
+      <li class="footer__socials-links socials__instagram">
         <a class="socials__img">
-          <img class="socials__icon" src="img/icon-insta.svg" alt="Instagram"  width="17" height="17">
+          <img class="socials__icon socials__icon--instagram" src="img/icon-insta.svg" alt="Instagram"  width="17" height="17">
         </a>
       </li>
 
-      <li class="footer__socials-links">
+      <li class="footer__socials-links socials__facebook">
         <a class="socials__img">
-          <img class="socials__icon" src="img/icon-fb.svg" alt="Facebook"  width="10" height="19">
+          <img class="socials__icon socials__icon--facebook" src="img/icon-fb.svg" alt="Facebook"  width="10" height="19">
         </a>
       </li>
     </ul>
