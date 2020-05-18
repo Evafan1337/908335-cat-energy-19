@@ -26,7 +26,7 @@
     <nav class="navigation-menu">
       <a class="navigation-menu__link navigation-menu__link--main">Главная</a>
       <a href="catalog.html" class="navigation-menu__link navigation-menu__link--catalog">Каталог продукции</a>
-      <a href="form.html" class="navigation-menu__link">Подбор программы</a>
+      <a href="form.html" class="navigation-menu__link navigation-menu__link--program">Подбор программы</a>
     </nav>
   </header>
 
@@ -102,6 +102,24 @@
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
+          <div class="demo__total">
+            <div class="demo__total-list">
+              <div class="demo__total-item demo__total-item--weight">
+                <span class="demo__total-result">5 кг</span>
+                <span class="demo__total-result-descr demo__total-result-descr--weight">снижение веса</span>
+              </div>
+
+              <div class="demo__total-item demo__total-item--days">
+                <span class="demo__total-result demo__total-result--days">60 дней</span>
+                <span class="demo__total-result-descr demo__total-result-descr--days">Затрачено времени</span>
+              </div>
+            </div>
+
+            <div class="demo__price">
+              <span>Затраты на питание:</span>
+              <span>15000 руб.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -110,7 +128,7 @@
       <div class="contacts__preview">
         <div class="container">
           <div class="contacts__preview-text">
-            <h2>Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
             <div class="contacts__adress">
               <p class="contacts__adress-info">ул. Большая Конюшенная, д. 19/8</p>
               <p class="contacts__adress-info">Санкт-Петербург</p>
@@ -121,9 +139,9 @@
 
       <div class="contacts__map">
         <picture>
-            <source media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img src="img/bg-map-mobile@1x.png" alt="Где мы находимся">
+            <source class="contacts__image" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png">
+            <source class="contacts__image" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+            <img class="contacts__image" src="img/bg-map-mobile@1x.png" alt="Где мы находимся">
         </picture>
       </div>
     </section>
