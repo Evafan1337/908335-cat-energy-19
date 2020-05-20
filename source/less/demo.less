@@ -10,7 +10,7 @@
   font-weight: 400;
   color: #111111;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .demo__text {
@@ -18,6 +18,13 @@
   width: 95%;
   margin-top: 0;
   margin-bottom: 23px;
+}
+
+.demo__image {
+  transform: scale(1.15);
+  display: block;
+  margin: 0 auto;
+  padding-top: 0;
 }
 
 .demo__total-list {
@@ -69,7 +76,49 @@
   color: #111111;
   text-align: center;
   margin-top: 34px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+}
+
+.demo__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 219px;
+  margin: 15px auto 0;
+  margin-top: 37px;
+}
+
+.demo__range {
+  display: none;
+}
+
+.demo__progress-button {
+  font-family: inherit;
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  width: 60px;
+  cursor: pointer;
+}
+
+.demo__progress-bar {
+  width: 84px;
+  height: 14px;
+  padding: 3px 5px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.demo__progress-toggle {
+  width: 50%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #68b738;
 }
 
 @media (min-width: 768px) {
@@ -83,12 +132,15 @@
 
   .demo__title {
     font-size: 60px;
+    margin-top: 42px;
     margin-bottom: 65px;
   }
 
   .demo__text {
+    font-size: 16px;
+    line-height: 24px;
     width: 97%;
-    margin-bottom: 51px;
+    margin-bottom: 53px;
   }
 
   .demo__total {
@@ -99,7 +151,7 @@
 
   .demo__total-item {
     width: 162px;
-    padding-bottom: 19px;
+    padding-bottom: 28px;
   }
 
   .demo__total-result-descr {
@@ -117,7 +169,7 @@
   }
 
   .demo__total-item--weight {
-    margin-right: 16px;
+    margin-right: 25px;
   }
 
   .demo__total-item--days {
@@ -132,6 +184,65 @@
     text-align: right;
     width: 180px;
     margin: 0;
+  }
+
+  .demo__progress {
+    margin-top: 232px;
+  }
+
+  .demo__image {
+    transform: scale(2.1);
+    display: block;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .demo__buttons {
+    width: 570px;
+    margin: 13px auto 0;
+    margin-top: 140px;
+  }
+
+  .demo__progress-button {
+    font-size: 20px;
+    line-height: 20px;
+    width: auto;
+    padding: 7px 0;
+    border-bottom: 1px dotted #bebebe;
+    outline: 0;
+  }
+
+  .demo__progress-bar {
+    width: 427px;
+    height: 35px;
+    border: 0;
+    background-color: transparent;
+    transform: translate(4px, 11px);
+  }
+
+  .demo__range {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: #dcdcdc;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .demo__progress-toggle {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -17px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 #d6d6d6;
+    background-color: #ffffff;
+    cursor: pointer;
   }
 }
 

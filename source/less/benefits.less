@@ -1,7 +1,12 @@
+.benefits {
+  padding-bottom: 19px;
+}
+
 .benefits__list {
   padding-left: 0;
   list-style-type: none;
   position: relative;
+  counter-reset: list;
 }
 
 .benefits__header {
@@ -12,6 +17,7 @@
 }
 
 .benefits__item {
+  counter-increment: list;
   // display: block;
   margin-bottom: 10px;
   display: flex;
@@ -29,6 +35,10 @@
   background-color: #68b738;
   background-position: center;
 }
+
+// .benefits__item::after{
+//   position: absolute;
+// }
 
 .benefits__item--natural::before {
   background-image: url("../img/advantage-leaf@1x.png");
@@ -69,11 +79,21 @@
     flex-wrap: wrap;
   }
 
+  .benefits__item::after {
+    content: counter(list);
+    position: absolute;
+    font-size: 270px;
+    top: 160px;
+    left: 121px;
+    color: #f2f2f2;
+    z-index: -3;
+  }
+
   .benefits__header {
     margin-top: 49px;
-    margin-left: 11px;
+    margin-left: 0;
     margin-bottom: -18px;
-    font-size: 56px;
+    font-size: 57px;
     line-height: 60px;
   }
 
@@ -136,7 +156,7 @@
   .benefits__item--natural::before {
     width: 80px;
     height: 78px;
-    margin-left: 10px;
+    // margin-left: 10px;
     background-repeat: no-repeat;
   }
 

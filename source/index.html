@@ -9,18 +9,16 @@
 <body>
   <header class="navigation">
     <a class="navigation__link">
-      <!-- <picture class="navigation__icon-container">
-        <source media="(min-width : 320px)" srcset="img/logo-mobile.svg">
-        <source media="(min-width : 768px)" srcset="img/logo-tablet.svg" >
-        <source media="(min-width : 1440px)" srcset="img/logo-desktop.svg" >
-        <img class="navigation__img" src="img/logo-tablet.svg" width="191" height="39" alt="Cat energy logo">
-      </picture> -->
-
       <picture>
             <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="navigation__img" src="img/logo-mobile.svg" width="191" height="39" alt="Питание для котов - Кэт-Энерджи">
       </picture>
+    </a>
+
+    <a class="navigation__menu-button">
+      <img src="img/icon-mobile-menu.svg" alt="Открыть меню">
+    </a>
 
     </a>
     <nav class="navigation-menu">
@@ -114,11 +112,29 @@
                 <span class="demo__total-result-descr demo__total-result-descr--days">Затрачено времени</span>
               </div>
             </div>
-
             <div class="demo__price">
               <span>Затраты на питание:</span>
               <span>15000 руб.</span>
             </div>
+          </div>
+
+          <div class="demo__progress">
+            <div class="demo__image-wrapper">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"> -->
+                <img class="demo__image demo__image--before" src="img/before-desktop@1x.png" width="320" height="240" alt="До употребления еды Cat Energy">
+              </picture>
+            </div>
+          </div>
+
+          <div class="demo__buttons">
+            <button class="demo__progress-button demo__progress-button--before" type="button">Было</button>
+            <div class="demo__progress-bar">
+              <input type="range" min="1" max="100" value="50" class="demo__range">
+              <div class="demo__progress-toggle"></div>
+            </div>
+            <button class="demo__progress-button demo__progress-button--after" type="button">Стало</button>
           </div>
         </div>
       </div>
@@ -156,7 +172,7 @@
       <img class="footer__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy logo">
     </a>
 
-    <ul class="footer__socials socials">
+    <ul class="footer__socials socials container">
       <li class="footer__socials-links socials__vk">
         <a class="socials__img">
           <img class="socials__icon socials__icon--vk" src="img/icon-vk.svg" alt="Вконтакте"  width="22" height="12">

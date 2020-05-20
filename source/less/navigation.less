@@ -1,5 +1,15 @@
 .navigation {
+  position: relative;
   background-color: #ffffff;
+}
+
+.navigation__menu-button {
+  display: block;
+  width: 25px;
+  height: 35px;
+  position: absolute;
+  left: 86%;
+  top: 8%;
 }
 
 .navigation__link {
@@ -15,10 +25,24 @@
 @media (min-width: 768px) {
   .navigation {
     display: flex;
+    justify-content: space-between;
   }
 
   .navigation__link {
     align-self: center;
+    padding-top: 0;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+
+  .navigation__img {
+    width: 174px;
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .navigation__menu-button {
+    display: none;
   }
 }
 

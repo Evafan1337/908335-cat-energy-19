@@ -9,12 +9,21 @@
 <body>
   <header class="navigation">
     <a class="navigation__link">
-      <img class="navigation__img" src="img/logo-tablet.svg" width="191" height="39" alt="Cat energy logo">
+      <picture>
+            <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="navigation__img" src="img/logo-mobile.svg" width="191" height="39" alt="Питание для котов - Кэт-Энерджи">
+      </picture>
     </a>
-    <nav class="navigation-menu visually-hidden">
-      <a href="index.html" class="navigation-menu__link">Главная</a>
-      <a class="navigation-menu__link">Каталог продукции</a>
-      <a href="form.html" class="navigation-menu__link">Подбор программы</a>
+
+    <a class="navigation__menu-button">
+      <img src="img/icon-mobile-menu.svg" alt="Открыть меню">
+    </a>
+
+    <nav class="navigation-menu">
+      <a href="index.html" class="navigation-menu__link navigation-menu__link--main">Главная</a>
+      <a class="navigation-menu__link navigation-menu__link--catalog">Каталог продукции</a>
+      <a href="form.html" class="navigation-menu__link navigation-menu__link--program">Подбор программы</a>
     </nav>
   </header>
 
@@ -295,14 +304,66 @@
           </div>
           <a class="products__order">Заказать</a>
         </li>
-      </ul>
 
-      <div class="more-products">
-        <h3 class="more-products__header">Показать еще 100500 товаров</h3>
-        <span class="more-products__text">На самом деле вкусов гораздо больше!</span>
-        <a href="" class="more-products__link">Показать все</a>
-      </div>
+        <li class="products__elem">
+          <div class="more-products">
+            <h3 class="more-products__header">Показать еще 100500 товаров</h3>
+            <span class="more-products__text">На самом деле вкусов гораздо больше!</span>
+            <a href="" class="more-products__link">Показать все</a>
+          </div>
+        </li>
+      </ul>
     </section>
+
+    <section class="extra__wrapper">
+        <div class="extra__container">
+          <ul class="extra__list">
+            <li class="extra__item extra__border">
+              <div class="extra__box">
+                <h3 class="extra__title">Сахарозаменитель</h3>
+                <div class="extra__description">
+                  <p class="extra__name">1 упаковка (100 г)</p>
+                  <p class="extra__price">200 Р.</p>
+                </div>
+              </div>
+              <a class="button extra__button" href="#">Заказать</a>
+            </li>
+            <li class="extra__item extra__border">
+              <div class="extra__box">
+                <h3 class="extra__title">Питьевая вода</h3>
+                <div class="extra__description">
+                  <p class="extra__name">5 литров</p>
+                  <p class="extra__price">50 Р.</p>
+                </div>
+              </div>
+              <a class="button extra__button" href="#">Заказать</a>
+            </li>
+            <li class="extra__item extra__border">
+              <div class="extra__box">
+                <h3 class="extra__title">Молоко</h3>
+                <div class="extra__description">
+                  <p class="extra__name">1 литр</p>
+                  <p class="extra__price">100 Р.</p>
+                </div>
+              </div>
+              <a class="button extra__button" href="#">Заказать</a>
+            </li>
+            <li class="extra__item extra__border">
+              <div class="extra__box">
+                <h3 class="extra__title">Витамины</h3>
+                <div class="extra__description">
+                  <p class="extra__name">1 упаковка (30 г)</p>
+                  <p class="extra__price">300 Р.</p>
+                </div>
+              </div>
+              <a class="button extra__button" href="#">Заказать</a>
+            </li>
+          </ul>
+        </div>
+        <p class="order-else">
+          <span class="order-else__all"> Закажите все</span> и получите чехол для кота в подарок!
+        </p>
+      </section>
   </main>
 
   <footer class="footer">
