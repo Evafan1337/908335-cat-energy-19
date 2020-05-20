@@ -20,11 +20,27 @@
   margin-bottom: 23px;
 }
 
+.demo__image-wrapper {
+  position: relative;
+  display: flex;
+}
+
 .demo__image {
   transform: scale(1.15);
+  object-fit: none;
+  // position: absolute;
   display: block;
   margin: 0 auto;
   padding-top: 0;
+}
+
+.demo__image--before {
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.demo__image--after {
+  flex-grow: 1;
 }
 
 .demo__total-list {
