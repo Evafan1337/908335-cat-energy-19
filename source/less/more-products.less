@@ -47,3 +47,44 @@
   color: #444444;
   background-color: #f2f2f2;
 }
+
+@media (min-width: 768px){
+  .more-products{
+    margin-top: 80px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .more-products__header{
+    margin-top: 162px;
+    font-size: 19px;
+    line-height: 21px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more-products__header::before{
+    position: absolute;
+    content: " ";
+    left: 46px;
+    top: -108px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/icon-plus.svg);
+  }
+
+  .more-products__text{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Arial";
+    width: 188px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more-products__link{
+    margin-top: 82px;
+    margin-bottom: 36px;
+  }
+}

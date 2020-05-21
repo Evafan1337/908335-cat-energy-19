@@ -1,6 +1,14 @@
 .navigation-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+.navigation-menu--show{
+  display: flex;
+}
+
+.navigation-menu__button{
+  background: url('../img/icon-mobile-menu.svg');
 }
 
 .navigation-menu__link {
@@ -27,6 +35,7 @@
 @media (min-width: 768px) {
   .navigation-menu {
     // width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
