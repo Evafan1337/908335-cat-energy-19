@@ -16,12 +16,32 @@
       </picture>
     </a>
 
-    <a class="navigation__menu-button" alt="Открыть меню">
-      <!-- <img src="img/icon-mobile-menu.svg" alt="Открыть меню"> -->
-    </a>
+    <!-- <a class="navigation__menu-button" alt="Открыть меню">
+      <img src="img/icon-mobile-menu.svg" alt="Открыть меню">
+    </a> -->
+
+    <button class="navigation__burger" type="button">
+      <svg class="navigation__burger-icon navigation__burger-icon--open" width="24" height="19">
+        <use xlink:href="#icon-mobile-menu">
+          <svg id="icon-mobile-menu" viewBox="0 0 24 18">
+            <rect y="16" width="24" height="2"></rect>
+            <rect y="8" width="24" height="2"></rect>
+            <rect width="24" height="2"></rect>
+          </svg>
+        </use>
+      </svg>
+
+      <svg class="navigation__burger-icon navigation__burger-icon--close hidden" width="18" height="18">
+        <use xlink:href="#icon-close">
+          <svg id="icon-close" viewBox="0 0 18 18">
+            <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 "></polygon>
+          </svg>
+        </use>
+      </svg>
+    </button>
 
     </a>
-    <nav class="navigation-menu">
+    <nav class="navigation-menu navigation-menu--nojs">
       <a class="navigation-menu__link navigation-menu__link--main">Главная</a>
       <a href="catalog.html" class="navigation-menu__link navigation-menu__link--catalog">Каталог продукции</a>
       <a href="form.html" class="navigation-menu__link navigation-menu__link--program">Подбор программы</a>
@@ -93,53 +113,45 @@
     </section>
 
     <section class="demo">
-      <div class="container">
-        <div class="demo__item">
+      <div class="container--demo">
+        <div class="demo__wrapper">
           <h2 class="demo__title">Живой пример</h2>
           <p class="demo__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="demo__total">
-            <div class="demo__total-list">
-              <div class="demo__total-item demo__total-item--weight">
-                <span class="demo__total-result">5 кг</span>
-                <span class="demo__total-result-descr demo__total-result-descr--weight">снижение веса</span>
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="demo__stats">
+            <div class="demo__stats-list">
+              <div class="demo__stats-item demo__stats-item--weight">
+                <b class="demo__stats-value">5 кг</b>
+                <small class="demo__stats-subtitle">снижение веса</small>
               </div>
-
-              <div class="demo__total-item demo__total-item--days">
-                <span class="demo__total-result demo__total-result--days">60 дней</span>
-                <span class="demo__total-result-descr demo__total-result-descr--days">Затрачено времени</span>
+              <div class="demo__stats-item demo__stats-item--days">
+                <b class="demo__stats-value">60 дней</b>
+                <small class="demo__stats-subtitle">затрачено времени</small>
               </div>
             </div>
-            <div class="demo__price">
-              <span>Затраты на питание:</span>
-              <span>15000 руб.</span>
-            </div>
+            <p class="demo__caption">
+              <span>Затраты на питание: </span>
+              <span>15 000 руб.</span>
+            </p>
           </div>
-
           <div class="demo__progress">
             <div class="demo__image-wrapper">
-<!--               <picture>
-                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-
-
-              </picture> -->
-              <img class="demo__image demo__image--before" src="img/before-desktop@1x.png" width="320" height="240" alt="До употребления еды Cat Energy">
-              <img class="demo__image demo__image--after" src="img/after-desktop@1x.png" width="320" height="240" alt="До употребления еды Cat Energy">
+              <div class="demo__illustration demo__illustration--before"></div>
+              <div class="demo__illustration demo__illustration--after"></div>
             </div>
-          </div>
 
-          <div class="demo__buttons">
-            <button class="demo__progress-button demo__progress-button--before" type="button">Было</button>
-            <div class="demo__progress-bar">
-              <input type="range" min="1" max="100" value="50" class="demo__range">
-              <div class="demo__progress-toggle"></div>
+            <div class="demo__buttons-block">
+              <button class="demo__progress-button demo__progress-button--before" type="button">Было</button>
+              <div class="demo__progress-bar">
+                <input type="range" min="1" max="100" value="50" class="demo__range">
+                <div class="demo__progress-toggle"></div>
+              </div>
+              <button class="demo__progress-button demo__progress-button--after" type="button">Стало</button>
             </div>
-            <button class="demo__progress-button demo__progress-button--after" type="button">Стало</button>
           </div>
         </div>
+        <div class="demo__inner"></div>
       </div>
     </section>
 
@@ -156,13 +168,15 @@
         </div>
       </div>
 
-      <div class="contacts__map">
+      <div class="contacts__map"></div>
+
+      <!-- <div class="contacts__map">
         <picture>
             <source class="contacts__image" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png">
             <source class="contacts__image" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
             <img class="contacts__image" src="img/bg-map-mobile@1x.png" alt="Где мы находимся">
         </picture>
-      </div>
+      </div> -->
     </section>
 
     <!-- <section class="temp">
