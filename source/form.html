@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navigation">
+  <header class="navigation navigation--non-index">
     <a class="navigation__link">
       <!-- <picture class="navigation__icon-container">
         <source media="(min-width : 320px)" srcset="img/logo-mobile.svg">
@@ -98,22 +98,22 @@
             </fieldset>
 
             <fieldset class="fields__set fields__set--contacts">
-              <div class="fields__head">
+              <div class="fields__head fields__head--contacts">
                 <legend>
                   <h2 class="fields__title">Контактные данные (владельца кота)</h2>
                 </legend>
               </div>
-              <div class="fields__inner">
+              <div class="fields__inner fields__inner--contacts">
                 <div class="fields__block">
-                  <label for="email" class="fields__label">E-mail:*</label>
-                  <input type="email" class="fields__textfield" id="email" name="email" placeholder="kuklachev@gmail.com">
+                  <label for="email" class="fields__label fields__label--contacts">E-mail:*</label>
+                  <input type="email" class="fields__textfield fields__textfield--contacts" id="email" name="email" placeholder="kuklachev@gmail.com">
                   <svg class="fields__contact-icon fields__contact-icon--mail" width="17" height="13">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </div>
-                <div class="fields__block">
-                  <label for="phone" class="fields__label">Телефон:*</label>
-                  <input type="tel" class="fields__textfield" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                <div class="fields__block fields__block--phone">
+                  <label for="phone" class="fields__label fields__label--contacts">Телефон:*</label>
+                  <input type="tel" class="fields__textfield fields__textfield--contacts" id="phone" name="phone" placeholder="8 (960) 900-60-90">
                   <svg class="fields__contact-icon fields__contact-icon--phone" width="21" height="20">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
@@ -127,7 +127,7 @@
                   <h2 class="fields__title">Комментарий</h2>
                 </legend>
               </div>
-              <textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="fields__textarea fields__textarea--comments" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
             <fieldset class="fields__set fields__set--add">
@@ -158,7 +158,7 @@
             </fieldset>
 
             <div class="fields__button-block">
-              <button class="fields__button button" type="submit">Отправить заявку</button>
+              <button class="fields__button fields__button--add button" type="submit">Отправить заявку</button>
               <span class="fields__note">* — Обязательные поля</span>
             </div>
           </div>
@@ -166,20 +166,20 @@
       </div>
     </div>
 
-    <section class="contacts">
+    <section class="contacts contacts--form">
       <div class="contacts__preview">
-        <div class="container">
-          <div class="contacts__preview-text">
+        <div class="container container--contacts">
+          <div class="contacts__preview-text contacts__preview-text--form">
             <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
             <div class="contacts__adress">
               <p class="contacts__adress-info">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="contacts__adress-info">Санкт-Петербург</p>
+              <p class="contacts__adress-info contacts__adress-info--city">Санкт-Петербург</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="contacts__map"></div>
+      <div class="contacts__map contacts__map--form"></div>
 
       <!-- <div class="contacts__map">
         <picture>
@@ -208,32 +208,32 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__logo">
+    <a class="footer__logo footer__logo--form">
       <img class="footer__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy logo">
     </a>
 
-    <ul class="footer__socials socials">
-      <li class="footer__socials-links socials__vk">
+    <ul class="footer__socials socials socials--form">
+      <li class="footer__socials-links socials__vk socials__vk--form">
         <a class="socials__img">
           <img class="socials__icon socials__icon--vk" src="img/icon-vk.svg" alt="Вконтакте"  width="22" height="12">
         </a>
       </li>
 
-      <li class="footer__socials-links socials__instagram">
+      <li class="footer__socials-links socials__instagram socials__instagram--form">
         <a class="socials__img">
           <img class="socials__icon socials__icon--instagram" src="img/icon-insta.svg" alt="Instagram"  width="17" height="17">
         </a>
       </li>
 
-      <li class="footer__socials-links socials__facebook">
+      <li class="footer__socials-links socials__facebook socials__facebook--form">
         <a class="socials__img">
           <img class="socials__icon socials__icon--facebook" src="img/icon-fb.svg" alt="Facebook"  width="10" height="19">
         </a>
       </li>
     </ul>
 
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__creator">
-      <span class="footer__studio-name">HTML Academy</span>
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__creator footer__creator--form">
+      <span class="footer__studio-name footer__studio-name--form">HTML Academy</span>
       <img class="footer__studio_img" src="img/htmlacademy.svg" alt="htmlacademy logo" width="27" height="34">
     </a>
   </footer>

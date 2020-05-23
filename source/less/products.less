@@ -12,7 +12,7 @@
 .products__elem {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   border-top: 1px solid #ededed;
 }
 
@@ -26,6 +26,8 @@
   list-style-type: none;
   position: relative;
   border-bottom: 1px solid #ededed;
+  margin-bottom: 13px;
+  padding-bottom: 6px;
 }
 
 .products__link-image {
@@ -75,34 +77,39 @@
 //   margin-top: 26px;
 // }
 
+.products__header--first {
+  margin-top: 23px;
+  margin-left: -2px;
+}
+
 .products__header--second {
-  margin-top: 22px;
-  margin-left: 0;
+  margin-top: 17px;
+  margin-left: 4px;
 }
 
 .products__header--third {
-  margin-top: 26px;
-  margin-left: 2px;
+  margin-top: 21px;
+  margin-left: 0;
 }
 
 .products__header--four {
-  margin-bottom: 3px;
-  margin-top: 20px;
+  margin-bottom: 0;
+  margin-top: 14px;
 }
 
 .products__header--five {
-  margin-top: 21px;
+  margin-top: 18px;
   margin-left: 0;
 }
 
 .products__header--six {
-  margin-top: 21px;
+  margin-top: 17px;
   margin-left: 5px;
 }
 
 .products__header--seven {
   margin-left: 3px;
-  margin-top: 26px;
+  margin-top: 22px;
 }
 
 .products__picture-list-elem {
@@ -132,7 +139,8 @@
     // justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 80px;
+    // margin-left: 80px;
+    margin-left: 30px;
     margin-top: 88px;
     justify-content: space-between;
   }
@@ -157,17 +165,19 @@
   }
 
   .products__preview-header {
-    margin-top: 60px;
-    margin-left: 82px;
+    margin-top: 42px;
+    margin-left: 0;
     font-weight: 400;
     font-size: 60px;
     text-align: left;
   }
 
   .products__elem {
-    width: 245px;
+    width: 324px;
+    margin-right: 29px;
+    margin-left: 0;
     margin-bottom: 63px;
-    margin-right: 77px;
+    // margin-right: 77px;
     // width: 40%;
     // flex-grow: 1;
     background-image: linear-gradient(to bottom, transparent 0, transparent 77px, #f2f2f2 77px, #f2f2f2 100%);
@@ -187,10 +197,14 @@
   }
 
   .products__link-image {
+    width: auto;
     align-self: center;
+    margin-top: 29px;
+    display: block;
   }
 
   .products__picture-list-elem {
+    max-width: fit-content;
     // width: 324px;
     // width: 100%;
     // height: 100%;
