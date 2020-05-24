@@ -2,6 +2,7 @@
   padding: 0;
   list-style-type: none;
   margin: 20px 0 0;
+  margin-top: 16px;
 }
 
 .program-type-list__item {
@@ -52,4 +53,28 @@
   padding-top: 6px;
   padding-bottom: 6px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .program-type-list__label {
+    font-size: 20px;
+    padding-left: 59px;
+    padding-top: 12px;
+  }
+
+  .program-type-list__item {
+    margin-bottom: 18px;
+  }
+
+  .program-type-list__label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ededed;
+    border-radius: 50%;
+  }
 }

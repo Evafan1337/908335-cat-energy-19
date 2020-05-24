@@ -10,13 +10,22 @@
 }
 
 .fields__set--personal {
-  padding-bottom: 24px;
+  padding-bottom: 9px;
+}
+
+.fields__set--contacts {
+  margin-left: -3px;
 }
 
 .fields__block {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+  margin-left: -2px;
+}
+
+.fields__block--name {
+  margin-top: 33px;
 }
 
 .fields__label {
@@ -24,14 +33,30 @@
   text-transform: uppercase;
   color: #111111;
   white-space: nowrap;
+  margin-left: -1px;
+}
+
+.fields__label--contacts {
+  margin-left: 3px;
 }
 
 .fields__head {
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 26px;
   padding-bottom: 20px;
+}
+
+.fields__head--comments {
+  padding-top: 0;
+  margin-left: -4px;
+}
+
+.fields__head--additionals {
+  padding-top: 13px;
+  padding-bottom: 18px;
+  margin-left: -4px;
 }
 
 .fields__title {
@@ -48,7 +73,11 @@
 }
 
 .fields__inner {
-  margin-top: 15px;
+  margin-top: 10px;
+}
+
+.fields__note {
+  font-family: "Arial", sans-serif;
 }
 
 .fields__head::before {
@@ -57,17 +86,25 @@
   width: 100%;
   height: 3px;
   position: absolute;
-  top: 34px;
-  right: -20px;
+  top: 39px;
+  right: -22px;
   background-color: #68b738;
+}
+
+.fields__head--comments::before {
+  top: 15px;
+}
+
+.fields__head--additionals::before {
+  top: 28px;
 }
 
 .fields__textfield {
   width: 100%;
-  margin-left: 15px;
+  margin-left: 16px;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 12px 15px;
+  padding: 13px 15px;
   border: 1px solid #e6e6e6;
   outline: 0;
 }
@@ -83,6 +120,9 @@
   // padding: 12px 15px;
   border: 1px solid #e6e6e6;
   outline: 0;
+  font-family: "Oswald-Medium", sans-serif;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .fields__set--program {
@@ -105,12 +145,33 @@
 @media (min-width: 768px) {
   .fields {
     padding: 6px 35px 72px 40px;
+    padding-bottom: 23px;
+  }
+
+  .fields__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+
+  .fields__head--comments {
+    padding-top: 2px;
   }
 
   .fields__head::before {
     width: 200%;
     top: 42px;
     right: -65px;
+  }
+
+  .fields__head--comments::before {
+    top: 23px;
+  }
+
+  .fields__head--additionals::before {
+    top: 44px;
   }
 
   .fields__set--contacts .fields__title {
@@ -131,12 +192,25 @@
     margin-bottom: 70px;
   }
 
+  .fields__set--descr {
+    margin-bottom: 30px;
+  }
+
   .fields__set--personal {
     padding-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 58px;
   }
 
   .fields__block {
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 13px;
+    // margin-top: 54px;
+    margin-left: 1px;
+  }
+
+  .fields__block--name {
+    margin-top: 34px;
   }
 
   .fields__label,
@@ -146,19 +220,156 @@
   }
 
   .fields__textfield {
-    margin-left: 16px;
+    // margin-left: 16px;
+    margin-left: 17px;
+    font-family: "Oswald-Medium", sans-serif;
+  }
+
+  .fields__textarea--comments {
+    margin-top: 52px;
+    padding-left: 17px;
+    font-size: 20px;
+    height: 174px;
+    text-align: left;
+  }
+
+  .fields__contact-icon {
+    position: absolute;
+  }
+
+  .fields__label--contacts {
+    margin-left: 1px;
   }
 
   .fields__set--program {
+    width: 100%;
     padding-left: 27px;
     padding-bottom: 12px;
     margin-left: 0;
     margin-right: -65px;
     margin-bottom: 49px;
-    border-right: none;
+    // border-right: none;
   }
 
   .fields__set--contacts {
     margin-bottom: 37px;
+  }
+
+  .fields__set--add {
+    margin-bottom: 16px;
+  }
+
+  .fields__button-block {
+    text-align: center;
+    display: flex;
+  }
+
+  .fields__button--add {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    width: 44.75%;
+  }
+
+  .fields__note {
+    margin-left: 9.75%;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fields__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fields__set--personal {
+    width: 45%;
+    margin-left: 42px;
+    margin-bottom: 40px;
+  }
+
+  .fields__set--program {
+    width: 43.5%;
+    margin-top: 61px;
+    margin-left: 60px;
+    margin-bottom: 55px;
+  }
+
+  .fields__set--contacts {
+    width: 100%;
+  }
+
+  .fields__set--descr {
+    width: 100%;
+  }
+
+  .fields__set--add {
+    width: 100%;
+  }
+
+  .fields__head--contacts {
+    margin-top: 9px;
+    padding-top: 0;
+    margin-left: 40px;
+  }
+
+  .fields__head--contacts::before {
+    top: 22px;
+  }
+
+  .fields__inner--contacts {
+    display: flex;
+    margin-left: 42px;
+    margin-top: 12px;
+  }
+
+  .fields__textfield--contacts {
+    margin-left: 20px;
+    width: 487px;
+  }
+
+  .fields__block--phone {
+    margin-left: 6%;
+  }
+
+  .fields__head--comments {
+    margin-left: 34px;
+  }
+
+  .fields__textarea--comments {
+    width: 96.75%;
+  }
+
+  .fields__head--additionals {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 23px;
+    margin-left: 36px;
+  }
+
+  .fields__head--additionals::before {
+    top: 24px;
+  }
+
+  .fields__button-block {
+    width: 100%;
+  }
+
+  .fields__button--add {
+    margin-left: 40px;
+    width: 43.5%;
+    margin-top: 6px;
+  }
+
+  .fields__note {
+    margin-left: 6.35%;
+    font-size: 16px;
+    margin-top: 21px;
+  }
+
+  .fields {
+    padding-bottom: 65px;
   }
 }

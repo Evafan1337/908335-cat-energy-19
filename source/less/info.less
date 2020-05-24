@@ -2,6 +2,18 @@
   font-family: "Arial", sans-serif;
 }
 
+.info--pixel-perfect-modify-second {
+  margin-left: 5px;
+}
+
+.info--pixel-perfect-modify-six {
+  margin-left: 7px;
+}
+
+.info--pixel-perfect-modify-seven {
+  margin-left: 3px;
+}
+
 .info__param,
 .info__value {
   font-size: 12px;
@@ -9,8 +21,18 @@
   color: #444444;
 }
 
+.info__description {
+  margin-left: 2px;
+}
+
+.info__param {
+  margin-left: -2px;
+}
+
 .info__value {
-  margin-left: 50%;
+  margin-left: 0;
+  // margin-left: 50%;
+  // margin-left: 74px;
 }
 
 .info__value--price {
@@ -18,23 +40,49 @@
 }
 
 .info__value--weight-change {
-  margin-left: 45%;
+  // margin-left: 43%;
 }
 
 .info__item {
   display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
+  .info__description {
+    margin-top: 30px;
+    margin-left: 38px;
+    margin-right: 37px;
+  }
+
   .info__item {
-    justify-content: space-around;
+    // display: block;
+    justify-content: inherit;
+    border-bottom: 1px solid #cfcfcf;
+  }
+
+  .info__item--amount {
+    padding-bottom: 6px;
+  }
+
+  .info__item--taste {
+    padding-bottom: 7px;
+    margin-top: 8px;
+  }
+
+  .info__item--price {
+    padding-bottom: 7px;
+    margin-top: 8px;
   }
 
   .info__param {
     margin-left: 0;
+    font-size: 16px;
   }
 
   .info__value {
-    margin-left: 0;
+    // margin-left: 0;
+    font-size: 16px;
+    margin-left: auto;
   }
 }

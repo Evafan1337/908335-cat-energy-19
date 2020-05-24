@@ -1,17 +1,26 @@
+.benefits {
+  padding-bottom: 21px;
+}
+
 .benefits__list {
   padding-left: 0;
   list-style-type: none;
   position: relative;
+  counter-reset: list;
+  margin-bottom: 10px;
 }
 
 .benefits__header {
-  margin-top: 23px;
+  margin-top: 18px;
+  margin-bottom: 26px;
+  font-weight: 400;
   // margin-left: 20px;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 60px;
 }
 
 .benefits__item {
+  counter-increment: list;
   // display: block;
   margin-bottom: 10px;
   display: flex;
@@ -29,6 +38,10 @@
   background-color: #68b738;
   background-position: center;
 }
+
+// .benefits__item::after{
+//   position: absolute;
+// }
 
 .benefits__item--natural::before {
   background-image: url("../img/advantage-leaf@1x.png");
@@ -69,11 +82,21 @@
     flex-wrap: wrap;
   }
 
+  .benefits__item::after {
+    content: counter(list);
+    position: absolute;
+    font-size: 270px;
+    top: 160px;
+    left: 121px;
+    color: #f2f2f2;
+    z-index: -3;
+  }
+
   .benefits__header {
-    margin-top: 49px;
-    margin-left: 11px;
+    margin-top: 48px;
+    margin-left: 0;
     margin-bottom: -18px;
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
   }
 
@@ -84,9 +107,21 @@
     // padding-bottom: 100px;
   }
 
+  .benefits__item--timing {
+    padding-top: 83px;
+  }
+
+  .benefits__item--form {
+    padding-top: 76px;
+  }
+
   .benefits__item--form,
   .benefits__item--natural {
     margin-bottom: 33px;
+  }
+
+  .benefits__item--changes {
+    padding-top: 84px;
   }
 
   .benefits__text {
@@ -95,28 +130,25 @@
   }
 
   .benefits__text--natural {
-    margin-left: 3%;
-    margin-top: 12%;
+    margin-left: 0;
+    margin-top: 10%;
     font-size: 16px;
     width: 74%;
     line-height: 24px;
   }
 
   .benefits__text--form {
-    // margin-top: 60.6%;
-    // margin-left: 34.5%;
-    margin-top: 33px;
+    margin-top: 31px;
     margin-left: 0;
     font-size: 16px;
     width: 74%;
     line-height: 24px;
-    // margin-bottom: 135px;
   }
 
   .benefits__text--timing {
     // margin-left: 10%;
     // margin-top: 32%;
-    margin-top: 33px;
+    margin-top: 34px;
     margin-left: 0;
     font-size: 16px;
     line-height: 24px;
@@ -136,14 +168,14 @@
   .benefits__item--natural::before {
     width: 80px;
     height: 78px;
-    margin-left: 10px;
+    // margin-left: 10px;
     background-repeat: no-repeat;
   }
 
   .benefits__item--timing::before {
     // left: 4%;
     // top: 61%;
-    width: 80px;
+    width: 81px;
     height: 80px;
     background-repeat: no-repeat;
   }
@@ -167,8 +199,8 @@
 
 @media (min-width: 1440px) {
   .benefits__header {
-    margin-top: 42px;
-    margin-left: 7.7%;
+    margin-top: 83px;
+    margin-left: 80px;
   }
 
   .benefits__list {
@@ -176,20 +208,27 @@
   }
 
   .benefits__text--natural {
-    margin-left: 31%;
+    // margin-left: 31%;
+    margin-left: 80px;
+    margin-top: 32px;
   }
 
   .benefits__text--form {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 60px;
     // margin-top: 51.6%;
     // margin-left: 20.5%;
   }
 
   .benefits__text--timing {
+    margin-left: 40px;
     // margin-left: 11%;
     // margin-top: 52%;
   }
 
   .benefits__text--changes {
+    margin-left: 20px;
     // margin-top: 52%;
     // margin-left: 1%;
   }
@@ -200,18 +239,22 @@
 
   .benefits__item--natural::before {
     // left: 7.7%;
+    margin-left: 80px;
   }
 
   .benefits__item--form::before {
     // left: 30.2%;
+    margin-left: 60px;
   }
 
   .benefits__item--changes::before {
+    margin-left: 20px;
     // left: 75.4%;
     // top: 18%;
   }
 
   .benefits__item--timing::before {
+    margin-left: 40px;
     // left: 52.8%;
     // top: 18%;
   }

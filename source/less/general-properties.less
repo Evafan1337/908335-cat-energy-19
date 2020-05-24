@@ -1,3 +1,10 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Oswald-Medium", sans-serif;
@@ -6,7 +13,12 @@ body {
   font-weight: normal;
   color: #000000;
   background-color: #ffffff;
-  box-sizing: border-box;
+  // box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -24,11 +36,20 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   // box-sizing: content-box;
+}
+
+.container--demo {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .temp {
@@ -43,6 +64,11 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  .container--demo {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .temp {
