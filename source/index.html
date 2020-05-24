@@ -52,9 +52,15 @@
     <h1 class="visually-hidden">Cat energy. Функциональное питание для котов.</h1>
     <section class="preview">
       <div class = "preview__item container">
+        <!-- <img srcset="" alt="" class="preview__image-can"> -->
         <h2 class="preview__header">Функциональное питание для котов</h2>
         <span class="preview__text">Занялся собой? Займись котом!</span>
-        <img class="preview__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="">
+        <!-- <img class="preview__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt=""> -->
+        <picture>
+            <source class="preview__image--can" media="(min-width: 1220px)" srcset="img/index-can-desktop@1x.png, index-can-desktop@2x.png">
+            <source class="preview__image--can" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, index-can-tablet@2x.jpg">
+            <img class="preview__image--can" srcset="img/index-can-mobile@1x.png, index-can-mobile@2x.png" alt="Питание для котов - Кэт-Энерджи">
+        </picture>
         <a href="" class="preview__link">Подобрать программу</a>
       </div>
 
@@ -168,7 +174,11 @@
         </div>
       </div>
 
-      <div class="contacts__map contacts__map--index"></div>
+      <picture class="contacts__map contacts__map--index">
+          <source class="contacts__image" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png, bg-map-desktop@2x.png">
+          <source class="contacts__image" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, bg-map-tablet@2x.png">
+          <img class="contacts__image" srcset="img/bg-map-mobile@1x.png, bg-map-mobile@1x.png" alt="Где мы находимся">
+      </picture>
 
       <!-- <div class="contacts__map">
         <picture>
@@ -189,7 +199,7 @@
       <img class="footer__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy logo">
     </a>
 
-    <ul class="footer__socials socials container">
+    <ul class="footer__socials socials socials--index container">
       <li class="footer__socials-links socials__vk socials__vk--index">
         <a class="socials__img">
           <img class="socials__icon socials__icon--vk" src="img/icon-vk.svg" alt="Вконтакте"  width="22" height="12">

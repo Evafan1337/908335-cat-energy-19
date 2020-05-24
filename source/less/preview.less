@@ -7,6 +7,15 @@
   background-repeat: no-repeat;
 }
 
+.preview::before {
+  display: none;
+}
+
+.preview__image--can {
+  // margin-top: 140px;
+  margin-top: 30px;
+}
+
 .preview__header {
   // padding-top: 28px;
   margin-top: 0;
@@ -57,11 +66,21 @@
 }
 
 @media (min-width: 768px) {
+  // .preview {
+  //   background-image: url("../img/index-can-tablet@1x.jpg");
+  //   background-size: 91.8%;
+  //   background-position-y: 245px;
+  //   background-position-x: 32px;
+  // }
   .preview {
-    background-image: url("../img/index-can-tablet@1x.jpg");
-    background-size: 91.8%;
-    background-position-y: 245px;
-    background-position-x: 32px;
+    background-image: none;
+  }
+
+  .preview__image--can {
+    display: block;
+    position: absolute;
+    margin-top: 23px;
+    z-index: -1;
   }
 
   .preview__header {
@@ -79,7 +98,8 @@
 
   .preview__item {
     padding-top: 42px;
-    padding-bottom: 529px;
+    // padding-bottom: 529px;
+    min-height: 850px;
   }
 
   .preview__text {
@@ -106,19 +126,38 @@
 
 @media (min-width: 1440px) {
   .preview {
-    background-image: url("../img/index-background-desktop@1x.jpg");
     position: relative;
+    // background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: none;
+    // position: relative;
     background-position-y: 0;
+    background-size: contain;
     background-position-x: 720px;
     margin-bottom: 80px;
   }
 
+  .preview::before {
+    position: absolute;
+    display: block;
+    content: " ";
+    height: 696px;
+    width: 50%;
+    right: 0%;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+  }
+
+  .preview__image--can {
+    top: 119px;
+    left: 39%;
+    z-index: 3;
+  }
+
   .preview__header {
-    margin-top: 184px;
-    margin-left: 160px;
+    margin-top: 181px;
+    margin-left: 161px;
     width: 420px;
     /* margin-right: 330px; */
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
   }
 
@@ -129,16 +168,18 @@
 
   .preview__item {
     position: relative;
-    background-position-y: 141px;
-    background-position-x: 560px;
-    background-repeat: no-repeat;
     padding-bottom: 0;
-    background-image: url("../img/index-can-desktop@1x.png");
+    min-height: 695px;
+    // background-position-y: 141px;
+    // background-position-x: 560px;
+    // background-repeat: no-repeat;
+    // padding-bottom: 0;
+    // background-image: url("../img/index-can-desktop@1x.png");
   }
 
   .preview__link {
     font-size: 20px;
-    padding-left: 3px;
+    padding-left: 0;
     padding-bottom: 18px;
     padding-top: 16px;
     /* width: 22%; */

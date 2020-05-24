@@ -167,7 +167,7 @@
     </div>
 
     <section class="contacts contacts--form">
-      <div class="contacts__preview">
+      <div class="contacts__preview contacts__preview--form">
         <div class="container container--contacts">
           <div class="contacts__preview-text contacts__preview-text--form">
             <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
@@ -179,7 +179,13 @@
         </div>
       </div>
 
-      <div class="contacts__map contacts__map--form"></div>
+      <picture class="contacts__map contacts__map--form">
+          <source class="contacts__image" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png, bg-map-desktop@2x.png">
+          <source class="contacts__image" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, bg-map-tablet@2x.png">
+          <img class="contacts__image" srcset="img/bg-map-mobile@1x.png, bg-map-mobile@2x.png" alt="Где мы находимся">
+      </picture>
+
+      <!-- <div class="contacts__map contacts__map--form"></div> -->
 
       <!-- <div class="contacts__map">
         <picture>
