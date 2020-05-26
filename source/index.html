@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+    </script>
+    <script src="js/vendor/picturefill.js" async></script>
+    <script src="js/vendor/svg4everybody.min.js"></script>
+    <script>
+    svg4everybody();
+  </script>
 </head>
 <body>
-  <header class="navigation">
+  <header class="navigation container">
     <a class="navigation__link">
       <picture>
             <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
@@ -21,7 +29,7 @@
     </a> -->
 
     <button class="navigation__burger" type="button">
-      <svg class="navigation__burger-icon navigation__burger-icon--open" width="24" height="19">
+      <svg class="navigation__burger-icon navigation__burger-icon--open navigation__burger-icon--nojs" width="24" height="19">
         <!-- <use xlink:href="#icon-mobile-menu"> -->
           <svg id="icon-mobile-menu" viewBox="0 0 24 18">
             <rect y="16" width="24" height="2"></rect>
@@ -41,7 +49,7 @@
     </button>
 
     <nav class="navigation-menu navigation-menu--nojs">
-      <a class="navigation-menu__link navigation-menu__link--main">Главная</a>
+      <a class="navigation-menu__link navigation-menu__link--main navigation-menu__link--activated">Главная</a>
       <a href="catalog.html" class="navigation-menu__link navigation-menu__link--catalog">Каталог продукции</a>
       <a href="form.html" class="navigation-menu__link navigation-menu__link--program">Подбор программы</a>
     </nav>
@@ -56,8 +64,8 @@
         <span class="preview__text">Занялся собой? Займись котом!</span>
         <!-- <img class="preview__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt=""> -->
         <picture>
-            <source class="preview__image" media="(min-width: 1220px)" srcset="img/index-can-desktop@1x.png 1x, index-can-desktop@2x.png 2x">
-            <source class="preview__image" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, index-can-tablet@2x.jpg 2x">
+            <source class="preview__image" media="(min-width: 1220px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source class="preview__image" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="preview__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Питание для котов - Кэт-Энерджи">
         </picture>
         <a href="" class="preview__link">Подобрать программу</a>
@@ -117,7 +125,53 @@
       </ul>
     </section>
 
-    <section class="demo">
+    <section class="effect">
+        <div class="effect__title-wrapper">
+          <h2 class="effect__tittle">Живой пример</h2>
+        </div>
+        <div class="effect__wrapper">
+          <div class="effect__text-container">
+            <p class="effect__example">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="effect__container-wrapper">
+              <ul class="effect__stats-list">
+                <li class="effect__stats-item">
+                  <p class="effect__number">5 кг</p>
+                  <p class="effect__text">снижение веса</p>
+                </li>
+                <li class="effect__stats-item">
+                  <p class="effect__number">60 дней</p>
+                  <p class="effect__text">затрачено времени</p>
+                </li>
+              </ul>
+              <div class="effect__value">
+                <p class="effect__value-text">Затраты на питание:</p>
+                <p class="effect__value-price">15 000 руб.</p>
+              </div>
+            </div>
+          </div>
+          <div class="effect__demonstration">
+            <h2 class="visually-hidden">Результаты питания</h2>
+            <div class="effect-slider">
+              <input type="radio" name="dynamic" id="was" class="visually-hidden effect-slider__was">
+              <input type="radio" name="dynamic" id="will" class="visually-hidden effect-slider__will">
+              <div class="effect-slider__screen-container effect-slider__screen-container--one">
+                <div class="effect-slider__screen--one effect-slider__screen"></div>
+              </div>
+              <div class="effect-slider__screen-container effect-slider__screen-container--two">
+                  <div class="effect-slider__screen--two effect-slider__screen"></div>
+              </div>
+              <div class="effect__filter-range-wrapper">
+                <label for="was" class="effect__before">Было</label>
+                <div class="effect__filter-range-scale"></div>
+                <div class="effect__filter-range-handle"></div>
+                <label for="will" class="effect__after">Стало</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- <section class="demo">
       <div class="container container--demo">
         <div class="demo__wrapper">
           <h2 class="demo__title">Живой пример</h2>
@@ -158,7 +212,7 @@
         </div>
         <div class="demo__inner"></div>
       </div>
-    </section>
+    </section> -->
 
     <section class="contacts">
       <div class="contacts__preview">
@@ -173,56 +227,64 @@
         </div>
       </div>
 
-      <picture class="contacts__map contacts__map--index">
-          <source class="contacts__image" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png 1x, bg-map-desktop@2x.png 2x">
-          <source class="contacts__image" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, bg-map-tablet@2x.png 2x">
-          <img class="contacts__image" src="img/bg-map-mobile@1x.png" srcset="bg-map-mobile@2x.png 2x" alt="Где мы находимся">
-      </picture>
-
-      <!-- <div class="contacts__map">
-        <picture>
-            <source class="contacts__image" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png">
-            <source class="contacts__image" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="contacts__image" src="img/bg-map-mobile@1x.png" alt="Где мы находимся">
-        </picture>
-      </div> -->
+      <div class="contacts__iframe" id="map">
+          <iframe class="contacts__iframe-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" allowfullscreen=""></iframe>
+      </div>
     </section>
-
-    <!-- <section class="temp">
-
-    </section> -->
   </main>
 
-  <footer class="footer">
-    <a class="footer__logo footer__logo--index">
-      <img class="footer__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy logo">
-    </a>
-
-    <ul class="footer__socials socials socials--index container">
-      <li class="footer__socials-links socials__vk socials__vk--index">
-        <a class="socials__img">
-          <img class="socials__icon socials__icon--vk" src="img/icon-vk.svg" alt="Вконтакте"  width="22" height="12">
-        </a>
-      </li>
-
-      <li class="footer__socials-links socials__instagram socials__instagram--index">
-        <a class="socials__img">
-          <img class="socials__icon socials__icon--instagram" src="img/icon-insta.svg" alt="Instagram"  width="17" height="17">
-        </a>
-      </li>
-
-      <li class="footer__socials-links socials__facebook socials__facebook--index">
-        <a class="socials__img">
-          <img class="socials__icon socials__icon--facebook" src="img/icon-fb.svg" alt="Facebook"  width="10" height="19">
-        </a>
-      </li>
-    </ul>
-
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__creator footer__creator--index">
-      <span class="footer__studio-name footer__studio-name--index">HTML Academy</span>
-      <img class="footer__studio_img" src="img/htmlacademy.svg" alt="htmlacademy logo" width="27" height="34">
-    </a>
+  <footer class="footer footer--index">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__block footer__block--logo">
+          <a href="index.html" class="footer__logo-link">
+            <h3 class="visually-hidden">Cat Energy</h3>
+            <svg class="footer__logo" width="130" height="25">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__block footer__block--social">
+          <ul class="footer__list social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <h3 class="visually-hidden">Мы Вконтакте</h3>
+                <svg class="social-list__icon social-list__icon--vk" width="22" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <h3 class="visually-hidden">Мы в Инстаграме</h3>
+                <svg class="social-list__icon social-list__icon--inst" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <h3 class="visually-hidden">Мы в Фейсбуке</h3>
+                <svg class="social-list__icon social-list__icon--fb" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--copyright">
+          <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <h3 class="footer__developer">HTML Academy</h3>
+            <svg class="footer__developer-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
-  <script src="js/menu.js"></script>
+
+
+  <script src="js/menu.min.js"></script>
 </body>
 </html>

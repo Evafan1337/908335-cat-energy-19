@@ -1,6 +1,7 @@
 .navigation {
   position: relative;
   background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
 }
 
 .navigation__menu-button {
@@ -29,6 +30,10 @@
   margin: 0 auto;
 }
 
+.navigation__burger-icon--nojs {
+  display: none;
+}
+
 .navigation__link {
   display: block;
   margin-bottom: 13px;
@@ -36,6 +41,10 @@
 
 .navigation__img {
   padding-top: 10px;
+  // margin-left: 20px;
+}
+
+.navigation__img--form {
   margin-left: 20px;
 }
 
@@ -43,6 +52,9 @@
   .navigation {
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
   }
 
   .navigation__burger {
@@ -71,7 +83,7 @@
   .navigation {
     width: 100%;
     justify-content: space-between;
-    position: absolute;
+    // position: absolute;
     z-index: 2;
     background-color: transparent;
   }
