@@ -30,7 +30,8 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "debug": "gulp css"
   },
   "browserslist": [
     "last 2 versions",
@@ -47,5 +48,9 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "svg4everybody": "^2.1.9"
   }
 }

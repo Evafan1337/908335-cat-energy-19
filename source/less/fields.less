@@ -6,11 +6,12 @@
 }
 
 .fields__set--descr {
-  padding-bottom: 6px;
+  padding-bottom: 12px;
+  padding-top: 11px;
 }
 
 .fields__set--personal {
-  padding-bottom: 9px;
+  padding-bottom: 15px;
 }
 
 .fields__set--contacts {
@@ -18,14 +19,17 @@
 }
 
 .fields__block {
+  position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
   margin-left: -2px;
 }
 
 .fields__block--name {
-  margin-top: 33px;
+  // margin-top: 33px;
+  margin-top: 29px;
+  margin-bottom: 8px;
 }
 
 .fields__label {
@@ -51,12 +55,14 @@
 .fields__head--comments {
   padding-top: 0;
   margin-left: -4px;
+  padding-bottom: 21px;
 }
 
 .fields__head--additionals {
-  padding-top: 13px;
-  padding-bottom: 18px;
+  padding-top: 9px;
+  // padding-bottom: 18px;
   margin-left: -4px;
+  padding-bottom: 19px;
 }
 
 .fields__title {
@@ -96,17 +102,41 @@
 }
 
 .fields__head--additionals::before {
-  top: 28px;
+  top: 22px;
 }
 
 .fields__textfield {
   width: 100%;
-  margin-left: 16px;
+  // margin-left: 16px;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 13px 15px;
+  // padding: 13px 15px;
   border: 1px solid #e6e6e6;
   outline: 0;
+  margin-left: 15px;
+  font-family: "Oswald-Medium", sans-serif;
+  padding: 10px 15px;
+  margin-top: 3px;
+  margin-right: -2px;
+}
+
+.fields__textfield--weight {
+  margin-top: 6px;
+  margin-left: 17px;
+}
+
+.fields__textfield--age {
+  margin-top: 6px;
+}
+
+.fields__textfield--contacts {
+  margin-left: 12px;
+}
+
+.fields__textfield--comments {
+  margin-left: -1px;
+  padding-left: 2px;
+  width: 101%;
 }
 
 .fields__textarea {
@@ -131,7 +161,13 @@
   padding-left: 20px;
   padding-right: 20px;
   border: 1px solid #ededed;
+  padding-bottom: 9px;
 }
+
+// .fields__set--descr {
+//     // margin-bottom: 30px;
+//     // padding-top: 11px;
+// }
 
 .fields__button-block {
   text-align: center;
@@ -141,6 +177,19 @@
   width: 100%;
   margin-bottom: 22px;
 }
+
+.fields__block--phone {
+  margin-top: 10px;
+}
+
+.fields__head--contacts {
+  padding-top: 24px;
+  margin-left: 2px;
+  // margin-top: 9px;
+  // padding-top: 0;
+  // margin-left: 40px;
+}
+
 
 @media (min-width: 768px) {
   .fields {
@@ -153,7 +202,7 @@
     display: flex;
     align-items: center;
     padding-top: 22px;
-    padding-bottom: 21px;
+    padding-bottom: 25px;
   }
 
   .fields__head--comments {
@@ -162,12 +211,12 @@
 
   .fields__head::before {
     width: 200%;
-    top: 42px;
+    top: 47px;
     right: -65px;
   }
 
   .fields__head--comments::before {
-    top: 23px;
+    top: 27px;
   }
 
   .fields__head--additionals::before {
@@ -194,6 +243,7 @@
 
   .fields__set--descr {
     margin-bottom: 30px;
+    padding-top: 0;
   }
 
   .fields__set--personal {
@@ -202,9 +252,14 @@
     margin-bottom: 58px;
   }
 
+  .fields__set--add {
+    padding-top: 0;
+    margin-bottom: 16px;
+  }
+
   .fields__block {
     position: relative;
-    margin-bottom: 13px;
+    margin-bottom: 17px;
     // margin-top: 54px;
     margin-left: 1px;
   }
@@ -220,9 +275,16 @@
   }
 
   .fields__textfield {
-    // margin-left: 16px;
-    margin-left: 17px;
+    margin-left: 19px;
+    margin-top: 4px;
+    padding-bottom: 11px;
+    padding-top: 7px;
+    padding-left: 19px;
     font-family: "Oswald-Medium", sans-serif;
+  }
+
+  .fields__textfield--weight {
+    margin-left: 18px;
   }
 
   .fields__textarea--comments {
@@ -238,7 +300,7 @@
   }
 
   .fields__label--contacts {
-    margin-left: 1px;
+    margin-left: 3px;
   }
 
   .fields__set--program {
@@ -253,10 +315,6 @@
 
   .fields__set--contacts {
     margin-bottom: 37px;
-  }
-
-  .fields__set--add {
-    margin-bottom: 16px;
   }
 
   .fields__button-block {
@@ -276,6 +334,15 @@
     font-size: 16px;
     margin-top: 15px;
   }
+
+  .fields__label--phone {
+    margin-left: 0;
+    margin-top: 3px;
+  }
+
+  .fields__head--additionals {
+    padding-bottom: 21px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -288,6 +355,14 @@
     width: 45%;
     margin-left: 42px;
     margin-bottom: 40px;
+  }
+
+  .fields__set--personal .fields__textfield {
+    margin-right: 19px;
+  }
+
+  .fields__title {
+    padding-left: 42px;
   }
 
   .fields__set--program {
@@ -313,6 +388,20 @@
     margin-top: 9px;
     padding-top: 0;
     margin-left: 40px;
+    padding-bottom: 18px;
+  }
+
+  .fields__textfield--contacts {
+    padding-left: 17px;
+    padding-top: 11px;
+    margin-top: 6px;
+    margin-left: 20px;
+    width: 487px;
+  }
+
+  .fields__textfield--phone {
+    margin-top: -2px;
+    width: 473px;
   }
 
   .fields__head--contacts::before {
@@ -325,11 +414,6 @@
     margin-top: 12px;
   }
 
-  .fields__textfield--contacts {
-    margin-left: 20px;
-    width: 487px;
-  }
-
   .fields__block--phone {
     margin-left: 6%;
   }
@@ -340,6 +424,7 @@
 
   .fields__textarea--comments {
     width: 96.75%;
+    margin-left: 39px;
   }
 
   .fields__head--additionals {
@@ -371,5 +456,100 @@
 
   .fields {
     padding-bottom: 53px;
+  }
+}
+
+// .fields__textfield--email{
+//   // position: absolute;
+//   // width: 30px;
+//   // height: 30px;
+//   background-image: url("../img/icon-mail.svg");
+// }
+
+.fields__label--email::after {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+
+.fields__textfield:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.fields__textfield:focus,
+.fields__textfield:active {
+  border: 1px solid #444444;
+}
+
+.fields__textfield--error {
+  border: 1px solid #ff8282;
+}
+
+@media (min-width: 1440px) {
+  .fields__head,
+  .fields__block {
+    position: unset;
+  }
+
+  .fields__head--contacts::before {
+    top: unset;
+    // right: 0;
+    margin-top: -12px;
+  }
+
+  .fields__head--comments::before {
+    top: unset;
+    margin-top: 7px;
+  }
+
+  .fields__head--additionals::before {
+    top: unset;
+    margin-top: 5px;
+  }
+
+  .fields__head--contacts::before,
+  .fields__head--comments::before,
+  .fields__head--additionals::before {
+    right: 0%;
+    // width:
+  }
+}
+
+.fields__svg {
+  position: absolute;
+  left: 89%;
+  top: 38%;
+}
+
+
+@media (min-width: 768px) {
+  .fields__svg {
+    transform: scale(1.15);
+    position: absolute;
+    left: 94.5%;
+    top: 40%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fields__svg {
+    left: 0;
+    top: 0;
+  }
+
+  .fields__svg--email {
+    position: relative;
+    margin-top: 10px;
+    margin-left: -36px;
+  }
+
+  .fields__svg--phone {
+    position: relative;
+    margin-left: -39px;
+  }
+
+  .fields__block--phone {
+    margin-left: 7.6%;
+    margin-top: 6px;
   }
 }

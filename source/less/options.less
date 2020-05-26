@@ -87,6 +87,22 @@
   height: 25px;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.options__link--pro:hover::after,
+.options__link--slim:hover::after {
+  // background:red;
+  width: 30px;
+}
+
+.options__link--pro:active::after,
+.options__link--slim:active::after {
+  opacity: 0.3;
+}
+
+.options__link:active {
+  opacity: 0.3;
 }
 
 .options__img {
@@ -230,6 +246,10 @@
 }
 
 @media (min-width: 1440px) {
+  .options {
+    margin-left: auto;
+  }
+
   .options__list {
     display: flex;
     // padding-left: 7.7%;
