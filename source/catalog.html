@@ -15,12 +15,12 @@
   </script>
 </head>
 <body>
-  <header class="navigation navigation--non-index container">
+  <header class="navigation navigation--catalog container">
     <a class="navigation__link">
       <picture>
             <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="navigation__img navigation__img--non-index" src="img/logo-mobile.svg" width="191" height="39" alt="Питание для котов - Кэт-Энерджи">
+            <img class="navigation__img navigation__img--catalog" src="img/logo-mobile.svg" width="191" height="39" alt="Питание для котов - Кэт-Энерджи">
       </picture>
     </a>
 
@@ -44,7 +44,7 @@
       </svg>
     </button>
 
-    <nav class="navigation-menu">
+    <nav class="navigation-menu navigation-menu--catalog">
       <a href="index.html" class="navigation-menu__link navigation-menu__link--main navigation-menu__link--non-index">Главная</a>
       <a class="navigation-menu__link navigation-menu__link--catalog navigation-menu__link--non-index navigation-menu__link--activated">Каталог продукции</a>
       <a href="form.html" class="navigation-menu__link navigation-menu__link--program navigation-menu__link--non-index">Подбор программы</a>
@@ -56,7 +56,7 @@
     <section class="products container">
       <h2 class="products__preview-header container">Каталог продукции</h2>
       <ul class="products__list">
-        <li class="products__elem container">
+        <li class="products__elem container products__elem--first">
           <div class="products__item">
             <a class="products__link-image products__link-image--small">
               <picture class="products__picture-list">
@@ -95,7 +95,7 @@
           <a class="products__order">Заказать</a>
         </li>
 
-        <li class="products__elem container">
+        <li class="products__elem container products__elem--second">
           <div class="products__item products__item--second">
             <a class="products__link-image products__link-image--big">
               <picture class="products__picture-list">
@@ -134,7 +134,7 @@
           <a class="products__order">Заказать</a>
         </li>
 
-        <li class="products__elem container">
+        <li class="products__elem container products__elem--third">
           <div class="products__item">
             <a class="products__link-image products__link-image--small">
               <picture class="products__picture-list">
@@ -173,7 +173,7 @@
           <a class="products__order">Заказать</a>
         </li>
 
-        <li class="products__elem container">
+        <li class="products__elem container products__elem--four">
           <div class="products__item">
             <a class="products__link-image products__link-image--big">
               <picture class="products__picture-list">
@@ -212,7 +212,7 @@
           <a class="products__order">Заказать</a>
         </li>
 
-        <li class="products__elem container">
+        <li class="products__elem container products__elem--five">
           <div class="products__item">
             <a class="products__link-image products__link-image--small">
               <picture class="products__picture-list">
@@ -251,7 +251,7 @@
           <a class="products__order">Заказать</a>
         </li>
 
-        <li class="products__elem container">
+        <li class="products__elem container products__elem--six">
           <div class="products__item">
             <a class="products__link-image products__link-image--big">
               <picture class="products__picture-list">
@@ -290,7 +290,7 @@
           <a class="products__order">Заказать</a>
         </li>
 
-        <li class="products__elem container">
+        <li class="products__elem container products__elem--seven">
           <div class="products__item">
             <a class="products__link-image products__link-image--small">
               <picture class="products__picture-list">
@@ -326,7 +326,7 @@
               </div>
             </div>
           </div>
-          <a class="products__order">Заказать</a>
+          <a class="products__order products__order--seven">Заказать</a>
         </li>
 
         <li class="products__elem products__elem--show-more">
@@ -374,7 +374,10 @@
             </li>
           </ul>
           <div class="additional-products__order-all order-all">
-            <img class="order-all__image" src="img/icon-gift.svg" width="60" height="60" alt="gift">
+            <svg class="additional-products__gift-icon" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-gift"></use>
+              </svg>
+            <!-- <img class="order-all__image" src="img/icon-gift.svg" width="60" height="60" alt="gift"> -->
             <p class="order-all__text">Закажите все<br> и получите чехол для кота в подарок!</p>
           </div>
     </section>
@@ -383,7 +386,7 @@
       <div class="contacts__preview contacts__preview--catalog">
         <div class="container">
           <div class="contacts__preview-text contacts__preview-text--index">
-            <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contacts__header">Приглашаем к&nbspсотрудничеству дилеров!</h2>
             <div class="contacts__adress">
               <p class="contacts__adress-info">ул. Большая Конюшенная, д. 19/8</p>
               <p class="contacts__adress-info contacts__adress-info--city">Санкт-Петербург</p>
@@ -412,10 +415,10 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--catalog">
     <div class="container">
       <div class="footer__wrapper">
-        <div class="footer__block footer__block--logo">
+        <div class="footer__block footer__block--logo footer__block--logo-catalog">
           <a href="index.html" class="footer__logo-link">
             <h3 class="visually-hidden">Cat Energy</h3>
             <svg class="footer__logo" width="130" height="25">
@@ -451,7 +454,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__block footer__block--copyright">
+        <div class="footer__block footer__block--copyright footer__block--copyright-catalog">
           <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
             <h3 class="footer__developer">HTML Academy</h3>
             <svg class="footer__developer-icon" width="27" height="34">

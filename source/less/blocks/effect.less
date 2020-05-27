@@ -55,7 +55,7 @@
 .effect__text {
   font-size: 12px;
   line-height: 12px;
-  font-family: "ArialTM", sans-serif;
+  font-family: "ArialTM", "Arial", sans-serif;
   color: #444444;
   width: 77px;
   text-align: center;
@@ -307,7 +307,8 @@
   }
 
   .effect__tittle {
-    font-size: 56px;
+    font-size: 60px;
+    font-weight: 400;
     line-height: 60px;
     padding-left: 0;
     margin: 0 auto;
@@ -388,5 +389,18 @@
 
   .effect__demonstration::before {
     top: 194px;
+  }
+}
+
+@media (max-width: 767px) {
+  .effect__before {
+    left: -8px;
+    top: -2px;
+  }
+
+  .effect__after {
+    left: auto;
+    right: 7px;
+    top: -2px;
   }
 }
